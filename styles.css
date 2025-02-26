@@ -1,0 +1,119 @@
+body {
+    background-color: #a7bd40; 
+}
+
+nav {
+    font-size: 90%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end; 
+    color: #1d3309;
+    list-style: none;
+}
+nav p {
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+nav p:hover {
+    /* transform: scale(1.3); */
+}
+nav li:first-child {
+    color: #2a548b;
+}
+nav li {
+    padding: 0 10px;
+}
+nav li:hover {
+    color: #c7da91;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+
+.butterfly {
+    display: flex;
+    justify-content: space-evenly;
+}
+.fly img {
+    width: 230px;
+    height: 230px;
+    cursor: -moz-grab;
+}
+.fly {
+    display: flex;
+    flex-direction: column;
+}
+.fly h3 {
+    margin: 10px 0;
+    font-weight: bold;
+}
+.fly h4 {
+    margin: 6px 0;
+}
+.fly p {
+    max-width: 230px;
+    min-height: 90px;
+    margin-top: 0;
+}
+.fly button {
+    background-color: #2a548b;
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: 2px 2px #1d3309;
+    padding: 7px;
+    color: whitesmoke;
+}
+.fly button:hover {
+    background-color: #1d3309;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #1d3309;
+    opacity: 0.8;
+    color: #d3e6a1;
+    margin: 0%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.subscribe {
+    width: 50%;
+}
+.subscribe form, h2, .connect h2 {
+    text-align: left;
+    padding: 10px 20px;
+    font-size: large;
+}
+.subscribe input {
+    margin: 10px 0;
+    padding: 7px;
+}
+.subscribe button {
+    font-size: small;
+    background-color: #c7da91;
+    padding: 7px;
+}
+.connect {
+    width: 50%;
+    box-sizing: border-box;
+    text-align: left;
+}
+.connect ul {
+    list-style: none;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+}
+.connect li {
+    padding: auto;
+}
