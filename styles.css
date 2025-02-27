@@ -1,98 +1,131 @@
+:root {
+    --darkblue: #1d2a62;
+    --lightblue: #2a548b;
+    --smokywhite: #ededed;
+    --lightgreen: #d3e6a1;
+    --green: #a7bd40;
+    --darkgreen: #1d3309;
+}
+
 body {
-    background-color: #a7bd40; 
+    background-color: var(--green); 
 }
 
 nav {
-    font-size: 90%;
     display: flex;
     justify-content: space-between; 
     align-items: center;
     padding: 0 20px;
 }
+nav button {
+    border-radius: 15px;
+    background-color: var(--darkblue);
+    color: var(--smokywhite);
+    padding: 12px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px black;
+    width: 8%;
+}
+nav button:hover {
+    background-color: var(--lightblue);
+    color: #1d2a62;
+    cursor: pointer;
+}
 nav ul {
+    list-style: none;
     display: flex;
     justify-content: flex-end; 
-    color: #1d3309;
-    list-style: none;
-}
-nav p {
-    justify-content: flex-start;
-    text-transform: uppercase;
-    font-weight: bolder;
-}
-nav p:hover {
-    /* transform: scale(1.3); */
-}
-nav li:first-child {
-    color: #2a548b;
+    color: var(--darkblue);
 }
 nav li {
     padding: 0 10px;
 }
+nav li:first-child {
+    color: #2a548b;
+}
 nav li:hover {
-    color: #c7da91;
+    color: var(--lightgreen);
     transform: scale(1.1);
     cursor: pointer;
     transition: transform 0.2s ease;
 }
 
-
-.butterfly {
+.main-container {
+    width: 90%;
+    margin: auto; 
+    align-items: center;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap; 
 }
-.fly img {
-    width: 230px;
-    height: 230px;
-    cursor: -moz-grab;
-}
-.fly {
+.main-card {
     display: flex;
     flex-direction: column;
+    align-items: center; 
+    text-align: left; 
 }
-.fly h3 {
-    margin: 10px 0;
+.main-card img {
+    width: 230px;
+    height: 230px;
+}
+.main-card h3 {
+    margin: 8px 0;
     font-weight: bold;
 }
-.fly h4 {
+.main-card h4 {
     margin: 6px 0;
 }
-.fly p {
+.main-card p {
     max-width: 230px;
-    min-height: 90px;
     margin-top: 0;
 }
-.fly button {
-    background-color: #2a548b;
+.main-card button {
+    background-color: var(--darkblue);
     margin-bottom: 30px;
     border: none;
     box-shadow: 2px 2px #1d3309;
-    padding: 7px;
-    color: whitesmoke;
+    padding: 8px;
+    color: var(--smokywhite);
 }
-.fly button:hover {
-    background-color: #1d3309;
+.main-card button:hover {
+    background-color: var(--lightblue);
+    color: #1d2a62;
     cursor: pointer;
 }
 
-
 footer {
-    background-color: #1d3309;
+    width: 100%;
+    margin: 0;
+    background-color: var(--darkgreen);
     opacity: 0.8;
-    color: #d3e6a1;
-    margin: 0%;
+    color: var(--lightgreen);
 
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 .subscribe {
-    width: 50%;
-}
-.subscribe form, h2, .connect h2 {
     text-align: left;
+    width: 40%;
+}
+.subscribe form {
     padding: 10px 20px;
     font-size: large;
+}
+.form1 {
+    display: flex;
+    gap: 10px;
+}
+/* .form11 {
+    justify-content: flex-start;
+    width: 50%;
+}
+.form12 {
+    justify-content: flex-end;
+    width: 50%;
+} */
+form select {
+    padding: 7px;
+    width: 100%;
 }
 .subscribe input {
     margin: 10px 0;
@@ -100,20 +133,17 @@ footer {
 }
 .subscribe button {
     font-size: small;
-    background-color: #c7da91;
+    background-color: var(--lightgreen);
     padding: 7px;
+    width: 100%;
 }
-.connect {
-    width: 50%;
-    box-sizing: border-box;
-    text-align: left;
+.subscribe button:hover {
+    background-color: var(--green);
+    cursor: pointer;
 }
-.connect ul {
-    list-style: none;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
-}
-.connect li {
-    padding: auto;
-}
+
+
+
+
+
+

@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>trial 1</title>
+    <title>template 01</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     
-    <header>
-        
+    <header>  
         <nav>
-            <p>E X P L O R E</p>
+            <button>explore</button>
             <ul class="links">
                 <li>h o m e</li> |
-                <li>a b o u t</li> |
                 <li>c o n t a c t</li> 
             </ul>
         </nav>
     </header>
 
-    <!-- <div class="main">
-        <img src="images/main.png" alt="main">
-    </div> -->
+    <div class="main-container">
 
-    <div class="butterfly">
-
-        <div class="fly">
+        <div class="main-card">
             <img src="images/one.png" alt="one">
-            <div class="butter">
+            <div class="main-desc">
                 <h3>B U T T E R F L Y</h3>
                 <h4>o n e</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid earum, necessitatibus itaque amet beatae, provident ea repellat similique laudantium excepturi </p>
@@ -37,9 +31,9 @@
             </div>
         </div>
         
-        <div class="fly">
+        <div class="main-card">
             <img src="images/five.png" alt="two">
-            <div class="butter">
+            <div class="main-desc">
                 <h3>R O S E</h3>
                 <h4>t w o</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ipsam velit neque, voluptates illo unde excepturi tempora quis provident at autem eum nam?</p>
@@ -47,9 +41,9 @@
             </div>
         </div>
         
-        <div class="fly">
+        <div class="main-card">
             <img src="images/three.png" alt="three">
-            <div class="butter">
+            <div class="main-desc">
                 <h3>B I R D</h3>
                 <h4>t h r e e</h4>
                 <p>Lorem. bcaecati ea quaerat similique officia fugit modi autem necessitatibus labore doloribus, asperiores amet.</p>
@@ -57,9 +51,9 @@
             </div>
         </div>
 
-        <div class="fly">
+        <div class="main-card">
             <img src="images/seven.png" alt="one">
-            <div class="butter">
+            <div class="main-desc">
                 <h3>R O A D</h3>
                 <H4>f o u r</H4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid earum, necessitatibus itaque amet beatae, provident ea repellat similique laudantium excepturi </p>
@@ -70,11 +64,11 @@
     </div>
 
 
-    <div class="butterfly">
+    <div class="main-container">
 
-        <div class="fly">
+        <div class="main-card">
             <img src="images/six.png" alt="one">
-            <div class="butter">
+            <div class="main-desc">
                 <h3>G I R L</h3>
                 <H4>f i v e</H4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid earum, necessitatibus itaque amet beatae, provident ea repellat similique laudantium excepturi </p>
@@ -82,9 +76,9 @@
             </div>
         </div>
         
-        <div class="fly">
+        <div class="main-card">
             <img src="images/two.png" alt="two">
-            <div class="butter">
+            <div class="main-desc">
                 <h3>W I N G S</h3>
                 <H4>s i x</H4>
                 <p>Lorem ipsum lit. Ipsa, ipsam velit neque, voluptates illo unde excepturi tempora quis provident at autem eum nam?</p>
@@ -92,9 +86,9 @@
             </div>
         </div>
         
-        <div class="fly">
+        <div class="main-card">
             <img src="images/four.png" alt="three">
-            <div class="butter">
+            <div class="main-desc">
                 <h3>W H A L E</h3>
                 <h4>s e v e n</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. bcaecati ea quaerat similique officia fugit modi autem necessitatibus labore doloribus, asperiores amet.</p>
@@ -102,9 +96,9 @@
             </div>
         </div>
 
-        <div class="fly">
+        <div class="main-card">
             <img src="images/eight.png" alt="three">
-            <div class="butter">
+            <div class="main-desc">
                 <h3>H A N D S</h3>
                 <h4>e i g h t</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. bcaecati ea quaerat similique officia fugit modi autem necessitatibus labore doloribus, asperiores amet.</p>
@@ -114,35 +108,31 @@
         
     </div>
 </body>
+
 <footer>
 
-    <div class="subscribe">
-        <h2>SUPERRCURIBE</h2>
-        <form action="">
-            <label for="mail">Enter your email:</label> <br>
-            <input type="email" id="mail" name="email" placeholder="email" required> <br>
-        
-            <button type="submit">subscribe</button> <br><br>
+        <!-- <h2>newsletter subscription</h2> -->
+        <form action="" class="subscribe">
+            <div class="form1">
+                <div class="form11">
+                    <label for="mail">Enter your email:</label> <br>
+                <input type="email" id="mail" name="email" placeholder="email" required> <br>
+                </div>
+                <div class="form12">
+                    <label for="name">Enter your name:</label> <br>
+                <input type="text" name="name" id="name" placeholder="name" required> <br>
+                </div>
+            </div>
         
             <label for="bio">Are you happy!?</label> <br>
             <select name="bio" id="bio">
                 <option value=""></option>
                 <option value="yes">Be happy</option>
                 <option value="no">Be happy</option>
-            </select> 
-        </form>
-        
-    </div>
+            </select> <br>
 
-    <div class="connect">
-        <h2>CONNECT</h2>
-        <ul>
-            <li><i class="fa-solid fa-star"></i> meowww </li>
-            <li><i class="fa-regular fa-face-smile"></i> meeoooow </li>
-            <li><i class="fa-regular fa-star"></i> meeeow </li>
-            <li><i class="fa-solid fa-face-smile"></i> hehe </li>
-        </ul>
-    </div>
+            <br><button type="submit">subscribe</button> <br><br>
+        </form>
 
 </footer>
 
