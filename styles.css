@@ -97,9 +97,11 @@ nav li:hover {
 .main-card {
     display: flex;
     flex-direction: column;
-    padding: 2%;
+    /* padding: 5% 0; */
+    padding: 20px;
     border: 1px solid transparent;
     transition: border 0.3s ease-out;
+    margin: 15px 0;
 }
 .main-card img {
     width: 230px;
@@ -163,8 +165,32 @@ footer {
     gap: 0;
     padding: 10px 0;
 }
-.form1 form input {
+.form1 .form11{
+    width: 45%;
+}
+.form1 .form12{
+    width: 45%;  
+}
+.form11 input {
+    box-sizing: border-box;
     width: 100%;
+}
+.form12 input{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+@media (max-width: 830px) {
+    .form1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .form1 .form11{
+        width: 100%;
+    }
+    .form1 .form12{
+        width: 100%;  
+    }
 }
 
 form select {
@@ -200,9 +226,3 @@ form select {
         padding: 5px 0;
     }
 }
-
-
-
-
-
-
